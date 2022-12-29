@@ -21,17 +21,26 @@ import {
 import {getFirestore} from "firebase/firestore";
 import { useNavigation } from '@react-navigation/core';
 
+import {
+    API_KEY,
+    AUTH_DOMAIN,
+    PROJECT_ID,
+    STORAGE_BUCKET,
+    MESSAGE_SENDER_ID,
+    APP_ID
+} from '@env';
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB8_NMe7OEoFvZFB44UOwXWnWRrVphyyCU",
-  authDomain: "fir-auth-9e38a.firebaseapp.com",
-  projectId: "fir-auth-9e38a",
-  storageBucket: "fir-auth-9e38a.appspot.com",
-  messagingSenderId: "185121687602",
-  appId: "1:185121687602:web:dc1c588cc9b8008b3d142b"
+  apiKey: `${API_KEY}`,
+  authDomain: `${AUTH_DOMAIN}`,
+  projectId: `${PROJECT_ID}`,
+  storageBucket: `${STORAGE_BUCKET}`,
+  messagingSenderId: `${MESSAGE_SENDER_ID}`,
+  appId: `${APP_ID}`
 };
 
 // Initialize Firebase
